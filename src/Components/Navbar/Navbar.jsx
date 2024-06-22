@@ -6,7 +6,7 @@ import AddNote from '../PostNote/AddNote';  // Adjust the path as per your proje
 function Navbar() {
     return (
         <>
-            <div className="container">
+            <div className="container-fuild">
                 <div className="row mt-2">
                     <div className="col">
                         <Link className="navi text-center" to="/">VerbiQ</Link>

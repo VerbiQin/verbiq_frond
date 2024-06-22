@@ -43,7 +43,7 @@ function Home() {
     };
 
     return (
-        <div className='container'>
+        <div className='container-fuild'>
             <div className="row text-center">
                 <div className="col">
                     <p className={`tab ${sortBy === 'random' ? 'active' : ''}`} onClick={() => handleSortChange('random')}>

@@ -10,7 +10,7 @@ function Card({ notes }) {
     };
 
     return (
-        <div className="container">
+        <div className="container-fuild">
             {notes.map((note, index) => (
                 <div key={index} className="col-12">
                     <div className="card mt-2">
