@@ -11,9 +11,6 @@ function Navbar() {
                     <div className="col">
                         <Link className="navi text-center" to="/">VerbiQ</Link>
                     </div>
-                    <div className="col">
-                        <Link className="navi text-center" to="/explore">Explore</Link>
-                    </div>
                     <div className="col text-center">
                         <AddNote />
                     </div>
