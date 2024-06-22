@@ -6,7 +6,7 @@ import './Home.css'; // Make sure to create and import your CSS file for styling
 
 function Home() {
     const [notes, setNotes] = useState([]);
-    const [sortBy, setSortBy] = useState('random');
+    const [sortBy, setSortBy] = useState('recent');
     const [searchKey, setSearchKey] = useState('');
 
     useEffect(() => {
@@ -47,19 +47,20 @@ function Home() {
             <div className="row text-center">
                 <div className="col">
                     <p className={`tab ${sortBy === 'random' ? 'active' : ''}`} onClick={() => handleSortChange('random')}>
-                        Randomize Notes
+                        RANDOM ORDER
                     </p>
                 </div>
                 <div className="col">
                     <p className={`tab ${sortBy === 'recent' ? 'active' : ''}`} onClick={() => handleSortChange('recent')}>
-                        Recent Notes
+                        MOST RECENT
                     </p>
                 </div>
                 <div className="col">
                     <p className={`tab ${sortBy === 'oldest' ? 'active' : ''}`} onClick={() => handleSortChange('oldest')}>
-                        Oldest Notes
+                        OLDEST FIRST
                     </p>
                 </div>
+
             </div>
             <div className="row">
                 <div className="col">
