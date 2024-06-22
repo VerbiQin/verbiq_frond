@@ -1,0 +1,20 @@
+:root{
+    --text: #eff5df;
+    --background: #0d0f05;
+    --primary: #d2e09c;
+    --secondary: #28687f;
+    --accent: #5e5acc;
+    --card-bg:#15170D;
+    }
+    
+
+.tab{
+    cursor: pointer;
+    color: var(--text);
+}
+
+.tab.active{
+    cursor: pointer;
+    color: var(--primary);
+    text-decoration: underline;
+}
