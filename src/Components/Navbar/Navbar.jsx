@@ -11,6 +11,10 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    const toggleMenuitem=()=>{
+        setMenuOpen(false)
+    }
+
     return (
         <div className="container-fluid">
             <div className="row mt-2">
@@ -22,12 +26,12 @@ function Navbar() {
                             <RiMenuLine className="icon" onClick={toggleMenu} />
                             {menuOpen && (
                                 <div className="menu-items">
-                                    <Link to="/comingsoon/About Us">About Us</Link>
-                                    <Link to="/comingsoon/Contact Us">Contact Us</Link>
-                                    <Link to="/comingsoon/Terms And Conditions">Terms and Conditions</Link>
-                                    <Link to="/comingsoon/Privacy Policy">Privacy Policy</Link>
-                                    <Link to="/comingsoon/Disclaimer">Disclaimer</Link>
-                                    <Link to="/comingsoon/Copyright Policy">Copyright Policy</Link>
+                                    <Link to="/comingsoon/About Us" onClick={() => toggleMenuitem()}>About Us</Link>
+                                    <Link to="/comingsoon/Contact Us" onClick={() => toggleMenuitem()}>Contact Us</Link>
+                                    <Link to="/comingsoon/Terms And Conditions" onClick={() => toggleMenuitem()}>Terms and Conditions</Link>
+                                    <Link to="/comingsoon/Privacy Policy" onClick={() => toggleMenuitem()}>Privacy Policy</Link>
+                                    <Link to="/comingsoon/Disclaimer" onClick={() => toggleMenuitem()}>Disclaimer</Link>
+                                    <Link to="/comingsoon/Copyright Policy" onClick={() => toggleMenuitem()}>Copyright Policy</Link>
                                 </div>
                             )}
                         </div>
