@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Comingsoon from './Components/Comingsoon/Comingsoon';
+import AboutUs from './Pages/Legal_Pages/AboutUs/AboutUs';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/comingsoon/:pagename" element={<Comingsoon />} />
+                <Route path="/about_us" element={<AboutUs/>} />
               </Routes>
             </div>
           </div>

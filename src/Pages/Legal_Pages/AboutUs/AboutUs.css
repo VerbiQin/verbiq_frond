@@ -1,0 +1,27 @@
+:root {
+  --text: #eff5df;
+  --background: #0d0f05;
+  --primary: #d2e09c;
+  --secondary: #28687f;
+  --accent: #5e5acc;
+  --card-bg: #15170d;
+}
+
+.page-header{
+    text-align: center;
+    padding: 20px;
+}
+
+.section-header {
+  color: var(--text);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.section-body {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: justify;
+}
