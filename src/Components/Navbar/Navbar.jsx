@@ -27,7 +27,7 @@ function Navbar() {
                             {menuOpen && (
                                 <div className="menu-items">
                                     <Link to="/about_us" onClick={() => toggleMenuitem()}>About Us</Link>
-                                    <Link to="/comingsoon/Contact Us" onClick={() => toggleMenuitem()}>Contact Us</Link>
+                                    <Link to="/contact_us" onClick={() => toggleMenuitem()}>Contact Us</Link>
                                     <Link to="/comingsoon/Terms And Conditions" onClick={() => toggleMenuitem()}>Terms and Conditions</Link>
                                     <Link to="/comingsoon/Privacy Policy" onClick={() => toggleMenuitem()}>Privacy Policy</Link>
                                     <Link to="/comingsoon/Disclaimer" onClick={() => toggleMenuitem()}>Disclaimer</Link>

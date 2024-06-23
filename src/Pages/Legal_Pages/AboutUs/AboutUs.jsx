@@ -62,7 +62,7 @@ function AboutUs() {
         </div>
         <div className="row">
           <div className='col'>
-          <p className='section-body'> <strong>Contact Us: </strong>For inquiries or feedback, please reach out to us at <Link to="/comingsoon/Contact Us">Contact Us</Link></p>
+          <p className='section-body'> <strong>Contact Us: </strong>For inquiries or feedback, please reach out to us at <Link to="/contact_us">Contact Us</Link></p>
           </div>
         </div>
       </div>
