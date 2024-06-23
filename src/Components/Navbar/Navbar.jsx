@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import AddNote from '../PostNote/AddNote';  // Adjust the path as per your project structure
@@ -7,13 +7,22 @@ import { RiMenuLine } from "react-icons/ri";
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    useEffect(() => {
+        const menu = document.querySelector('.menu-items');
+        if (menuOpen) {
+            menu.classList.add('show');
+        } else {
+            menu.classList.remove('show');
+        }
+    }, [menuOpen]);
+
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    const toggleMenuitem=()=>{
-        setMenuOpen(false)
-    }
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
     return (
         <div className="container-fluid">
@@ -24,16 +33,14 @@ function Navbar() {
                         <div className="navbar-item">
                             <AddNote />
                             <RiMenuLine className="icon" onClick={toggleMenu} />
-                            {menuOpen && (
-                                <div className="menu-items">
-                                    <Link to="/about_us" onClick={() => toggleMenuitem()}>About Us</Link>
-                                    <Link to="/contact_us" onClick={() => toggleMenuitem()}>Contact Us</Link>
-                                    <Link to="/comingsoon/Terms And Conditions" onClick={() => toggleMenuitem()}>Terms and Conditions</Link>
-                                    <Link to="/comingsoon/Privacy Policy" onClick={() => toggleMenuitem()}>Privacy Policy</Link>
-                                    <Link to="/comingsoon/Disclaimer" onClick={() => toggleMenuitem()}>Disclaimer</Link>
-                                    <Link to="/comingsoon/Copyright Policy" onClick={() => toggleMenuitem()}>Copyright Policy</Link>
-                                </div>
-                            )}
+                            <div className={`menu-items ${menuOpen ? 'show' : ''}`}>
+                                <Link to="/about_us" onClick={closeMenu}>About Us</Link>
+                                <Link to="/contact_us" onClick={closeMenu}>Contact Us</Link>
+                                <Link to="/comingsoon/Terms And Conditions" onClick={closeMenu}>Terms and Conditions</Link>
+                                <Link to="/comingsoon/Privacy Policy" onClick={closeMenu}>Privacy Policy</Link>
+                                <Link to="/comingsoon/Disclaimer" onClick={closeMenu}>Disclaimer</Link>
+                                <Link to="/comingsoon/Copyright Policy" onClick={closeMenu}>Copyright Policy</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
