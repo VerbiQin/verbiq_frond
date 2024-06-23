@@ -3,6 +3,7 @@ import Home from './Pages/Home/Home'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Comingsoon from './Components/Comingsoon/Comingsoon';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <div className="col">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/comingsoon/:pagename" element={<Comingsoon />} />
               </Routes>
             </div>
           </div>

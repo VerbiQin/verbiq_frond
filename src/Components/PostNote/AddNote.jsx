@@ -38,8 +38,8 @@ function AddNote() {
         }
     };
 
-    
-    
+
+
 
     return (
         <>
@@ -71,13 +71,13 @@ function AddNote() {
                                             <p style={countDisplayStyle}><b>{charCount}/400</b></p>
                                             {errorMessage && <p className="error-message">{errorMessage}</p>}
                                         </div>
-                                        <div className="col">
-                                            <button type="button" className="btn btn-card m-1" data-dismiss="modal">Close</button>
-                                            <button type="button" className="btn btn-card" onClick={handleSubmit}>Save changes</button>
+                                        <div className="col d-flex justify-content-end">
+                                            <button type="button" className="btn btn-card" onClick={handleSubmit}>Post</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </form>
                     </div>
                 </div>

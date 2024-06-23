@@ -1,0 +1,22 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import './Comingsoon.css'; // Create Comingsoon.css file for styling
+
+function Comingsoon() {
+    let { pagename } = useParams();
+
+    return (
+        <div className="comingsoon-container">
+            <div className="content">
+                <center>
+                    <h1>{pagename}</h1>
+                    <br />
+                    <h2>Coming Soon!</h2>
+                    <p>We are working on this page. Please check back later.</p>
+                </center>
+            </div>
+        </div>
+    );
+}
+
+export default Comingsoon;

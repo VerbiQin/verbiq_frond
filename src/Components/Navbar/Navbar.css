@@ -7,13 +7,62 @@
   --card-bg: #15170d;
 }
 
-.navi {
-  color: var(--text);
-  font-weight: 600;
-  font-size: 15pt;
+/* Navbar.css */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navi:hover {
-    text-decoration: none;
-    color: var(--text);
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text);
+}
+.navbar-logo:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  position: relative; /* Added to position the menu items */
+}
+
+.navbar-item {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item .icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.menu-items{
+  position: absolute;
+  top:2.5rem;
+  right: 0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--primary);
+  border-radius: .5rem;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  border-radius: .5rem;
+  display: block;
+}
+
+.menu-items a:hover {
+  background-color: var(--background);
 }
