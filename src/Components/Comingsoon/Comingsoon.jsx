@@ -10,8 +10,7 @@ function Comingsoon() {
             <div className="content">
                 <center>
                     <h1>{pagename}</h1>
-                    <br />
-                    <h2>Coming Soon!</h2>
+                    <h3>Coming Soon!</h3>
                     <p>We are working on this page. Please check back later.</p>
                 </center>
             </div>
