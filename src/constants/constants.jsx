@@ -6,6 +6,7 @@ export const formatCreatedAt = (createdAt) => {
     return date.toLocaleString()
 }
 
+
 export function RelaodPage(){
     window.location.reload();
   }
