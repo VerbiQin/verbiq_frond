@@ -36,10 +36,10 @@ function Navbar() {
                             <div className={`menu-items ${menuOpen ? 'show' : ''}`}>
                                 <Link to="/about_us" onClick={closeMenu}>About Us</Link>
                                 <Link to="/contact_us" onClick={closeMenu}>Contact Us</Link>
-                                <Link to="/comingsoon/Terms And Conditions" onClick={closeMenu}>Terms and Conditions</Link>
-                                <Link to="/comingsoon/Privacy Policy" onClick={closeMenu}>Privacy Policy</Link>
-                                <Link to="/comingsoon/Disclaimer" onClick={closeMenu}>Disclaimer</Link>
-                                <Link to="/comingsoon/Copyright Policy" onClick={closeMenu}>Copyright Policy</Link>
+                                <Link to="/terms_and_conditions" onClick={closeMenu}>Terms and Conditions</Link>
+                                <Link to="/privacy_policy" onClick={closeMenu}>Privacy Policy</Link>
+                                <Link to="/disclaimer" onClick={closeMenu}>Disclaimer</Link>
+                                {/* <Link to="/copyright_policy" onClick={closeMenu}>Copyright Policy</Link> */}
                             </div>
                         </div>
                     </div>

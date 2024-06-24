@@ -78,3 +78,7 @@
 .menu-items a:hover {
   background-color: var(--background);
 }
+
+.hr-nav{
+  background-color: var(--background);
+}
