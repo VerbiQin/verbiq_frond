@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import AddNote from '../PostNote/AddNote';  // Adjust the path as per your project structure
+import AddNote from '../PostNote/AddNote';
 import { RiMenuLine } from "react-icons/ri";
+import { FaRegCompass } from "react-icons/fa";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const menu = document.querySelector('.menu-items');
-        if (menuOpen) {
-            menu.classList.add('show');
-        } else {
-            menu.classList.remove('show');
-        }
-    }, [menuOpen]);
+    const [exploreActive, setExploreActive] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const toggleExplore = () => {
+        setExploreActive(!exploreActive);
     };
 
     const closeMenu = () => {
@@ -31,6 +28,9 @@ function Navbar() {
                     <Link className="navbar-logo text-center" to="/">VerbiQ</Link>
                     <div className="navbar-menu">
                         <div className="navbar-item">
+                            <div className={`icon-wrapper ${exploreActive ? 'active' : ''}`} onClick={toggleExplore}>
+                                <span className='explore-title'>EXPLORE</span> <FaRegCompass />
+                            </div>
                             <AddNote />
                             <RiMenuLine className="icon" onClick={toggleMenu} />
                             <div className={`menu-items ${menuOpen ? 'show' : ''}`}>
@@ -39,7 +39,6 @@ function Navbar() {
                                 <Link to="/terms_and_conditions" onClick={closeMenu}>Terms and Conditions</Link>
                                 <Link to="/privacy_policy" onClick={closeMenu}>Privacy Policy</Link>
                                 <Link to="/disclaimer" onClick={closeMenu}>Disclaimer</Link>
-                                {/* <Link to="/copyright_policy" onClick={closeMenu}>Copyright Policy</Link> */}
                             </div>
                         </div>
                     </div>

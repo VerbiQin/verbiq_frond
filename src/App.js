@@ -37,7 +37,6 @@ function App() {
                 <Route path="/disclaimer" element={<Disclaimer/>} />
                 {/* <Route path="/copyright_policy" element={<CopyrightPolicy/>} /> */}
 
-                
 
               </Routes>
             </div>

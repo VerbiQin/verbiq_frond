@@ -82,3 +82,28 @@
 .hr-nav{
   background-color: var(--background);
 }
+
+
+/* styles.css */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--text);
+  background-color: var(--card-bg);
+  cursor: pointer;
+}
+
+.icon-wrapper .explore-title{
+  display: none;
+}
+
+/* styles.css */
+.icon-wrapper.active {
+  background-color: var(--primary);
+  color: var(--background);
+
+}
+
