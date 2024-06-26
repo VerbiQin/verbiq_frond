@@ -60,7 +60,6 @@ function Home() {
                         OLDEST FIRST
                     </p>
                 </div>
-                
 
             </div>
             <div className="row">

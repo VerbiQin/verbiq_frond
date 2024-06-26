@@ -1,5 +1,6 @@
 :root {
   --text: #eff5df;
+  --text-light: #eff5df98;
   --background: #0d0f05;
   --primary: #d2e09c;
   --secondary: #28687f;
@@ -25,15 +26,8 @@
   color: var(--text-light);
 }
 
-.counters {
-  cursor: pointer;
-}
-.username-display {
-  cursor: pointer;
-  border: 1px solid var(--text-light);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
+
+
 .note-text {
   color: var(--text);
   text-wrap: balance;
@@ -47,3 +41,25 @@
 .alert-tbn {
   background-color: var(--accent);
 }
+
+.card-footer a{
+  color: var(--text-light);
+}
+
+.comment-box {
+  text-align: center;
+  border: 1px solid var(--text-light);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.comment-box:hover {
+  background-color: var(--primary);
+  color: var(--card-bg);
+}
+
+
+

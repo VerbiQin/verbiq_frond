@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { formatCreatedAt } from '../../constants/constants';
 import './Card.css'
+import { Link } from 'react-router-dom';
+
+
+
 
 function Card({ notes }) {
     const [expandedIndex, setExpandedIndex] = useState(null);
@@ -19,13 +23,17 @@ function Card({ notes }) {
                                 {expandedIndex === index ? note.content : note.content.slice(0, 100)}
                                 {note.content.length > 100 && (
                                     <span className='readmore-btn' onClick={() => toggleExpand(index)}>
-                                        {expandedIndex === index ? '...less' : '...more'}
+                                        {expandedIndex === index ? 'less' : '...more'}
                                     </span>
                                 )}
                             </pre>
                             <div className="card-footer">
+                                <Link to={`/comingsoon/Comment Box`} >
+                                    <p className='comment-box'>Comments 10</p>
+                                </Link>
                                 <p className='d-inline p-2'>{formatCreatedAt(note.created_at)}</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
