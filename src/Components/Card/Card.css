@@ -54,11 +54,21 @@
   cursor: pointer;
   display: inline-block;
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .comment-box:hover {
   background-color: var(--primary);
   color: var(--card-bg);
+}
+
+@media only screen and (max-width: 600px) {
+  .comment-box {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 
