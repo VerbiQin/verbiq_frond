@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { formatCreatedAt } from '../../constants/constants';
-import './Card.css'
-import { Link } from 'react-router-dom';
-
-
-
+import './Card.css';
+import Comments from '../Comments/Comments';
 
 function Card({ notes }) {
     const [expandedIndex, setExpandedIndex] = useState(null);
@@ -12,12 +9,13 @@ function Card({ notes }) {
     const toggleExpand = (index) => {
         setExpandedIndex(expandedIndex === index ? null : index);
     };
-
+    
     return (
-        <div className="container-fuild">
+        <div className="container-fluid">
             {notes.map((note, index) => (
                 <div key={index} className="col-12">
                     <div className="card mt-2">
+                        <p className='postid'>Note ID: {note.id}</p>
                         <div className="card-body">
                             <pre className="note-text">
                                 {expandedIndex === index ? note.content : note.content.slice(0, 100)}
@@ -28,12 +26,9 @@ function Card({ notes }) {
                                 )}
                             </pre>
                             <div className="card-footer">
-                                <Link to={`/comingsoon/Comment Box`} >
-                                    <p className='comment-box'>Comments 10</p>
-                                </Link>
+                                <Comments noteId={note.id} />
                                 <p className='d-inline p-2'>{formatCreatedAt(note.created_at)}</p>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -42,16 +42,16 @@ function AddNote() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col">
-                        <button type="button" className='btn textarea' placeholder='post note' data-toggle="modal" data-target="#exampleModal">POST NOTE</button>
+                        <button type="button" className='btn textarea' placeholder='post note' data-toggle="modal" data-target="#AddNote">POST NOTE</button>
                     </div>
                 </div>
             </div>
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="AddNote" tabIndex="-1" aria-labelledby="AddNoteLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Post Note</h5>
+                            <h5 className="modal-title" id="AddNoteLabel">Post Note</h5>
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>

@@ -59,6 +59,16 @@
   text-overflow: ellipsis;
 }
 
+.postid{
+  color: var(--text-light);
+  font-size: xx-small;
+  position: absolute;
+  font-family: monospace;
+  right: 0;
+  padding: 0.5rem;
+}
+
+
 .comment-box:hover {
   background-color: var(--primary);
   color: var(--card-bg);

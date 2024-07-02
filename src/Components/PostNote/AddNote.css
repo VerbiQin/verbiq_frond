@@ -1,10 +1,11 @@
 :root {
     --text: #eff5df;
+    --text-light: #eff5df98;
     --background: #0d0f05;
     --primary: #d2e09c;
     --secondary: #28687f;
     --accent: #5e5acc;
-    --card-bg:#15170D;
+    --card-bg: #15170d;
   }
   
 
@@ -62,4 +63,9 @@
 
 .error-message{
     margin-left: 5%;
+}
+
+.note-permanence-message{
+    color: var(--text-light);
+    font-size: small;
 }
