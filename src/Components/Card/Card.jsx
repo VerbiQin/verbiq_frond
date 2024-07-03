@@ -25,9 +25,9 @@ function Card({ notes }) {
                                     </span>
                                 )}
                             </pre>
-                            <div className="card-footer">
+                            <div className="card-footer post-card">
                                 <Comments noteId={note.id} />
-                                <p className='d-inline p-2'>{formatCreatedAt(note.created_at)}</p>
+                                <p className='d-inline p-2 card-post-date'>{formatCreatedAt(note.created_at)}</p>
                             </div>
                         </div>
                     </div>

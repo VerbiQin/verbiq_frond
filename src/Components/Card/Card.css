@@ -46,18 +46,7 @@
   color: var(--text-light);
 }
 
-.comment-box {
-  text-align: center;
-  border: 1px solid var(--text-light);
-  padding: 0.5rem 1.5rem;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  display: inline-block;
-  transition: background-color 0.3s, color 0.3s;
-  white-space: nowrap; 
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 
 .postid{
   color: var(--text-light);
@@ -68,16 +57,24 @@
   padding: 0.5rem;
 }
 
-
-.comment-box:hover {
-  background-color: var(--primary);
-  color: var(--card-bg);
-}
-
 @media only screen and (max-width: 600px) {
-  .comment-box {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 10pt;
+    color: var(--text-light);
+  }
+  
+  .card-post-date{
+    font-size:0.8rem;
+    text-wrap: wrap;
+    
   }
 }
 

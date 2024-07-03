@@ -67,12 +67,14 @@ function Comments({ noteId }) {
             }
         } catch (error) {
             setError('Error posting comment');
+            console.log(error)
         }
     };
 
     return (
         <>
             <p className='comment-box' data-toggle="modal" data-target={`#CommentBox-${noteId}`}>Comments {comments.length}</p>
+            
             <div className="modal fade" id={`CommentBox-${noteId}`} tabIndex="-1" aria-labelledby={`CommentBoxLabel-${noteId}`} aria-hidden="true">
                 <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
                     <div className="modal-content">

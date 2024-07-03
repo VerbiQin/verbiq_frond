@@ -9,9 +9,23 @@
 }
 
 .comment-box {
-  color: var(--text);
+  text-align: center;
+  border: 1px solid var(--text-light);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
   cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+.comment-box:hover {
+  background-color: var(--primary);
+  color: var(--card-bg);
+}
+
 
 .modal-header, .modal-footer {
   background-color: var(--background);
@@ -78,4 +92,12 @@
 
 .error-message {
   color: var(--text-light);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .comment-box {
+    padding: 0.5rem 4rem;
+    font-size: 0.8rem;
+  }
 }
