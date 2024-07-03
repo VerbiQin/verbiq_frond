@@ -58,7 +58,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .post-card {
+  .card-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +71,7 @@
     color: var(--text-light);
   }
   
+
   .card-post-date{
     font-size:0.8rem;
     text-wrap: wrap;

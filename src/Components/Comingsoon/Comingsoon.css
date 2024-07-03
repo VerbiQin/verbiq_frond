@@ -6,11 +6,10 @@
     --primary: #d2e09c;
     --secondary: #28687f;
     --accent: #5e5acc;
-    --card-bg: #15170d;
+    --card-bg: #15170d78;
 }
 
 .comingsoon-container {
-    background-color: var(--background);
     color: var(--text);
     height: 100vh;
     display: flex;
