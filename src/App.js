@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <ParticleBackground /> {/* Add the ParticleBackground component */}
+      <ParticleBackground />
       {isLoading ? (
         <div className="loading-container">
           <div className="loading-spinner"></div>
