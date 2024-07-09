@@ -35,7 +35,7 @@ function Navbar() {
                             <AddNote />
                             <RiMenuLine className="icon" onClick={toggleMenu} />
                             <div className={`menu-items ${menuOpen ? 'show' : ''}`}>
-                                <Link to="/comingsoon/Explore" onClick={closeMenu}>EXPLORE</Link>
+                                <Link to="/explore" onClick={closeMenu}>EXPLORE</Link>
                                 <Link to="/about_us" onClick={closeMenu}>About Us</Link>
                                 <Link to="/contact_us" onClick={closeMenu}>Contact Us</Link>
                                 <Link to="/terms_and_conditions" onClick={closeMenu}>Terms and Conditions</Link>

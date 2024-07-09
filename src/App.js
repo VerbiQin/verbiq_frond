@@ -9,7 +9,7 @@ import ContactUs from './Pages/Legal_Pages/ContactUs/ContactUs';
 import TermsAndConditions from './Pages/Legal_Pages/Terms And Conditions/TermsAndConditions';
 import PrivacyPolicy from './Pages/Legal_Pages/Privacy Policy/PrivacyPolicy';
 import Disclaimer from './Pages/Legal_Pages/Disclaimer/Disclaimer';
-import ParticleBackground from './Components/ParticleBackground/ParticleBackground';
+import Explore from './Pages/Explore/Explore';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +26,6 @@ function App() {
 
   return (
     <>
-      <ParticleBackground />
       {isLoading ? (
         <div className="loading-container">
           <div className="loading-spinner"></div>
@@ -51,6 +50,7 @@ function App() {
                   <Route path="/terms_and_conditions" element={<TermsAndConditions/>} />
                   <Route path="/privacy_policy" element={<PrivacyPolicy/>} />
                   <Route path="/disclaimer" element={<Disclaimer/>} />
+                  <Route path="/explore" element={<Explore/>} />
                 </Routes>
               </div>
             </div>

@@ -1,0 +1,43 @@
+.events {
+  color: red;
+}
+
+.events .card {
+  backdrop-filter: blur(60px);
+  border: 0.1px solid var(--text-light);
+}
+
+.events .title {
+  margin-left: 10px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.event_discription {
+  color: var(--text);
+  padding: 0.5rem;
+}
+
+.card-event-date {
+  color: var(--text-light);
+  font-size: 10pt;
+}
+
+.event-btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 4rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--primary);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.event-btn:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.Icon{
+    color: var(--primary);
+}
