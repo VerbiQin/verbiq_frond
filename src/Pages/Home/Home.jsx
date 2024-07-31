@@ -8,9 +8,10 @@ function Home() {
     const [notes, setNotes] = useState([]);
     const [sortBy, setSortBy] = useState('recent');
     const [searchKey, setSearchKey] = useState('');
-
+    
     useEffect(() => {
         fetchNotes(sortBy, searchKey);
+       
     }, [sortBy, searchKey]);
 
     const fetchNotes = (sortBy, searchKey) => {
