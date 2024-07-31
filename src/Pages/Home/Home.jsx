@@ -9,10 +9,8 @@ function Home() {
     const [sortBy, setSortBy] = useState('recent');
     const [searchKey, setSearchKey] = useState('');
 
-    console.log('home',process.env.REACT_APP_SERVER_API_KEY)
     useEffect(() => {
         fetchNotes(sortBy, searchKey);
-       
     }, [sortBy, searchKey]);
 
     const fetchNotes = (sortBy, searchKey) => {
