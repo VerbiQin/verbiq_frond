@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from '../../Components/Card/Card';
-import { Base_url } from '../../constants/constants'; // Corrected import path
 import './Home.css'; // Make sure to create and import your CSS file for styling
+import { Base_url } from '../../constants/constants';
 
 function Home() {
     const [notes, setNotes] = useState([]);
@@ -14,7 +14,7 @@ function Home() {
     }, [sortBy, searchKey]);
 
     const fetchNotes = (sortBy, searchKey) => {
-        let url = `${process.env.REACT_APP_SERVER_API_KEY}/get_all`;
+        let url = `${Base_url}/get_all`;
 
         // Construct query parameters based on sortBy and searchKey
         const params = {};
