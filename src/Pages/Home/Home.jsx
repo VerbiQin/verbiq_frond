@@ -14,7 +14,7 @@ function Home() {
     }, [sortBy, searchKey]);
 
     const fetchNotes = (sortBy, searchKey) => {
-        let url = `${Base_url}/get_all`;
+        let url = `${process.env.REACT_APP_SERVER_API_KEY}/get_all`;
 
         // Construct query parameters based on sortBy and searchKey
         const params = {};
@@ -30,7 +30,7 @@ function Home() {
                 setNotes(response.data);
             })
             .catch(error => {
-                console.error('Error fetching notes:', error);
+                console.log('Error fetching notes:', error)
             });
     };
 
